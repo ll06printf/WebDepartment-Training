@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. static</title>
+
+    <style>
+        html {
+            font-family: Consolas;
+        }
+        /* 
+            将元素在网页内定位，共有5种定位方式。
+            static absolute relative fixed sticky
+        
+        */
+        
+        .static-example {
+            /* HTML里面默认的position值为static */
+            position: static;
+            /* top left right bottom 对于static无效 */
+        }
+        
+        .insert {
+            height: 120px;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 插入后向下移动120px -->
+    <p class="insert">插入的文本 (height = 120px)</p>
+
+    <h1 class="static-example">Static</h1>
+    <p class="static-example">(static) Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo obcaecati tempora eligendi eaque mollitia, velit illo, odio eveniet vitae sed fuga culpa, doloribus corporis earum sequi? Cumque, numquam veniam.</p>
+</body>
+
+</html>

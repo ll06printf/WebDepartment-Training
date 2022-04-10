@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxSizing</title>
+
+    <style>
+        .block {
+            display: block;
+            /* width: 50%; */
+            /* margin: 0 auto 0 auto; */
+        }
+        
+        .inline {
+            display: inline;
+        }
+        
+        .inline-block {
+            display: inline-block;
+        }
+        
+        .inline,
+        .inline-block,
+        .block {
+            background-color: #000;
+            color: #fff;
+        }
+        /* #example {
+            text-align: center;
+        } */
+        
+        .border-box,
+        .content-box {
+            border: 5px solid #00b894;
+            background-color: #dfe6e9;
+            width: 240px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>盒子属性</h1>
+    <p>改变一个元素的显示方式。所有HTML元素都可以通过更改display属性将其显示方式设置为 block / inline / inline-block</p>
+    <ul>
+        <li>
+            <h2>display: block</h2>
+            <p>block：一个区块。block的元素会独占一行，左右不允许有元素与之并排，排序为由上至下。<br>
+                <strong>可以设置width和height</strong>
+            </p>
+        </li>
+        <li>
+            <h2>display: inline</h2>
+            <p>
+                inline: 内联元素，不会独占一行。inline元素允许左右与其他inline元素并排，宽度根据包含的内容而定。<br>
+                <strong>width和height对inline元素无效。</strong>
+            </p>
+        </li>
+        <li>
+            <h2>display: inline-block</h2>
+            <p>既可以设置宽度和高度，又可以和其他inline元素并排。</p>
+        </li>
+    </ul>
+    <hr>
+    <h1>举例</h1>
+    <div id="example">
+        <!-- block的预设宽度为父容器的空间 -->
+        <div class="block">block</div>
+        <span class="inline">inline</span>
+        <br>
+        <strong class="inline-block">inline-block</strong>
+    </div>
+
+    <hr>
+    <h2>常见block元素</h2>
+    <ul>
+        <li>div</li>
+        <li>p</li>
+        <li>h1~h6</li>
+        <li>ul,li</li>
+    </ul>
+    <h2>常见inline元素</h2>
+    <ul>
+        <li>span</li>
+        <li>a</li>
+        <li>strong</li>
+    </ul>
+
+    <hr>
+    <h1>BoxSizing</h1>
+    <p>适用于所有能够设置width和height属性的元素。</p>
+    <ul>
+        <li>
+            <h3>box-sizing: content-box（默认）</h3>
+            <p>元素大小不包括border</p>
+        </li>
+        <li>
+            <h3>box-sizing: border-box</h3>
+            <p>元素大小包含border</p>
+        </li>
+    </ul>
+    <hr>
+    <h1>举例</h1>
+    <div>
+        <div class="border-box" style="box-sizing: border-box">border-box width 240px</div>
+        <br>
+        <div class="content-box" style="box-sizing: content-box">content-box width 240px</div>
+    </div>
+</body>
+
+</html>

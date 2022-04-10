@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. fixed</title>
+
+    <style>
+        html {
+            font-family: Consolas;
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        .fixed {
+            position: fixed;
+            /* 设置为fixed的时候，元素会固定在窗口上的某个位置，不随页面滚动 */
+            /* 当设置了top/left/right/bottom以后，
+                fixed只会根据body定位，而不是某个relative元素或者其它元素，之前则根据上级元素定位 */
+            width: 240px;
+            height: 240px;
+            left: 80px;
+            bottom: 60px;
+        }
+        
+        .decoration {
+            border: 3px solid #2c3e50;
+            background-color: #ecf0f1;
+        }
+        
+        .insert {
+            background-color: #5069DA;
+            height: 150vh;
+            color: #fff;
+            text-align: center;
+            padding: 0 4px;
+        }
+        
+        .insert p {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>fixed</h1>
+    <div class="insert">insert (div, default) <br><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, ut debitis vel, cupiditate a obcaecati earum reiciendis magnam expedita autem, dolorem dolores aliquid vero recusandae est laboriosam quo necessitatibus? Voluptatum!</p>
+    </div>
+
+    <div class="fixed decoration">
+        position:fixed;<br> left:80px; bottom:60px;
+    </div>
+</body>
+
+</html>

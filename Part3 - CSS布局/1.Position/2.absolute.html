@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. absolute</title>
+
+    <style>
+        html {
+            font-family: Consolas;
+        }
+        
+        .absolute-example {
+            position: absolute;
+            /* top left right bottom 对于absolute有效 */
+            bottom: 40px;
+            right: 40px;
+        }
+        
+        .bg {
+            width: 200px;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .insert {
+            background-color: #5069DA;
+            border: 3px solid #3d50a6;
+            height: 200vh;
+            color: #fff;
+        }
+        
+        .double-ab {
+            position: absolute;
+            left: 80px;
+            bottom: 80px;
+        }
+        
+        .bg2 {
+            border: 3px solid #2c3e50;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Absolute</h1>
+    <!-- 会随着鼠标滚轮的滑动而移动 -->
+    <!-- <div class="insert">填充物</div> -->
+
+    <p class="absolute-example bg">(absolute) Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo obcaecati tempora eligendi eaque mollitia, velit illo, odio eveniet vitae sed fuga culpa, doloribus corporis earum sequi? Cumque, numquam veniam.</p>
+    <!-- absolute元素之间不影响位置 -->
+    <p class="absolute-example bg" style="right: 200px;">(absolute) Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo obcaecati tempora eligendi eaque mollitia, velit illo, odio eveniet vitae sed fuga culpa, doloribus corporis earum sequi? Cumque, numquam veniam.</p>
+
+    <!-- 将absolute元素放到absolute的元素里面 -->
+    <div class="double-ab bg2">
+        left:80px; bottom:80px; 最近的relative父容器
+        <div class="double-ab bg2">
+            left:80px; bottom:80px;
+        </div>
+    </div>
+</body>
+
+</html>

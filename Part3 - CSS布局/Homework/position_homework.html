@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Exercise</title>
+</head>
+
+<body>
+    <span id="top"></span>
+    <!-- 1. 将图片移动到这段文字的右侧（float）并设置4px的外边距 -->
+    <h1>Lorem Ipsum</h1>
+    <!-- 7. 将标题设置为sticky，标题背景颜色设置为白色，实现滚动的时候自动贴靠顶端 -->
+    <div>
+        <img src="https://www.iim.fr/ecole-web/wp-content/uploads/2020/07/lorem_ipsum_origines_explication-1.jpg" width="300px" alt="image">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi consectetur dicta eos sit illo repellendus aspernatur. Ratione, cumque assumenda, pariatur saepe, voluptas minus inventore voluptates non sed veniam consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis unde blanditiis, perspiciatis repudiandae vitae dolorum illo harum, ratione necessitatibus aliquid facilis enim tempora veritatis. Facere quo odit recusandae obcaecati ex?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a nesciunt, laboriosam illum illo molestias exercitationem inventore nobis dolore fugiat, quibusdam quisquam beatae deleniti error nostrum harum minima eveniet reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic dolore cum fugiat iste itaque ducimus quo earum ad architecto, autem sapiente cupiditate illum quaerat debitis. Eaque vitae dicta consequatur?</p>
+
+        <!-- 2. 这3段文字（<p>）设置为左右对齐 -->
+        <!-- 3. 将图片移动到这段文字的左侧（float），并设置上边和右边均为6px的外边距 -->
+        <img src="https://www.iim.fr/ecole-web/wp-content/uploads/2020/07/lorem_ipsum_origines_explication-1.jpg" width="300px" alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A consectetur vero cum doloribus aliquid excepturi ratione velit quo, deserunt omnis voluptates vitae accusantium totam! Sint at distinctio odit iure. In!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde tempore beatae in animi soluta ratione eveniet ad ex! Esse, voluptates voluptatibus ex ea ut cumque officia facilis non eum maiores.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia architecto iste voluptas assumenda facilis vitae autem, cum et, provident fugit atque obcaecati reprehenderit quo tempore cumque dignissimos nobis? Blanditiis, facere?</p>
+        <!-- 4. 把这段开头的用div包装的词设置为内联样式（inline），并用css设置类似黄色荧光笔的效果 -->
+        <p>
+            <div>Lorem ipsum</div> dolor sit amet consectetur adipisicing elit. Expedita ducimus voluptate itaque sed error. Corporis praesentium quidem perferendis dolores error dolor tempora maxime tenetur! Quibusdam dolores facilis iste necessitatibus inventore.
+        </p>
+
+        <!-- 5. 用float将本段的L（已经用span包住了）设置为首字下沉两行:字体大小为1.99em，右边距设置为.2em -->
+        <p><span>L</span>orem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vero maxime, unde illo porro vitae, mollitia id amet ratione voluptatum repudiandae neque. Consequuntur molestiae et tempora quos nobis laboriosam pariatur. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quas illum, sed laboriosam temporibus aliquid optio reiciendis alias ab culpa, accusamus vero nemo ratione impedit saepe et, numquam error accusantium doloremque?
+        </p>
+    </div>
+    <hr>
+    <!-- 6. 将以下两段文字分为4栏，段落边距设置为4px，文字两端对齐 -->
+    <div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nulla ullam, voluptates reprehenderit, a ex ea fugiat enim inventore ab temporibus similique consectetur mollitia harum quasi blanditiis corrupti. Commodi, molestias!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo excepturi eaque accusamus quasi, repellat tempora? Ullam, numquam aliquam delectus sapiente, culpa facilis ipsam consequatur voluptates, debitis commodi iure fuga architecto!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sint a officia vel facere modi porro, quia quod qui saepe nostrum voluptates ducimus quidem cumque illo mollitia omnis atque voluptatem!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quos sed neque placeat! Minima quisquam tempora perferendis, aut sapiente labore ut sequi, iure a commodi nihil aperiam facere est mollitia!</p>
+        </div>
+    </div>
+
+    <div style="clear: both;">
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tenetur nobis sapiente, magni tempora aut inventore cupiditate, sed suscipit aliquam ullam ipsa nesciunt quisquam, fuga maiores similique nulla ipsum maxime!</p>
+        <!-- 8. 设置一个固定在浏览器窗口的链接按钮，用于返回顶部 -->
+        <!-- 具体设置：宽度4个文字大小（想想用什么单位？），内边距半个文字大小（单位），边框圆角1个文字大小（单位）。位置固定在浏览器右边10px，下面10px的位置。去除链接的下划线，文字颜色改为灰色 -->
+        <a href="#top">返回顶部</a>
+    </div>
+</body>
+
+</html>

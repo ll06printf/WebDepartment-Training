@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. relative</title>
+
+    <!-- 开启Spacing-js -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/spacingjs" defer></script> -->
+    <style>
+        html {
+            font-family: Consolas;
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        .relative {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            /* relative相比static可以设置top left right bottom属性 */
+            top: 60px;
+            left: 150px;
+        }
+        
+        .decoration {
+            border: 3px solid #34495e;
+        }
+        
+        .insert {
+            background-color: #5069DA;
+            height: 120px;
+            color: #fff;
+        }
+        
+        .absolute-example {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            width: 250px;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .others {
+            height: 200px;
+            border: 3px solid #0984e3;
+            background-color: #74b9ff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="decoration">relative</h1>
+    <!-- 和static一样，会随着文档内容变化位置（流动） -->
+    <div class="insert">height: 120px;</div>
+
+    <!-- 到上面的距离，不是到网页顶部的距离 -->
+    <div class="relative decoration">
+        position：relative;<br> top: 60px; left:150px;<br> width: 360px; height: 360px;
+        <!-- relative的特性：在relative元素内的absolute元素会根据relative元素的位置重新定位。（static不行） -->
+        <p class="absolute-example">(absolute)<br>right:40px; bottom: 40px;</p>
+    </div>
+    <div class="others">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam veritatis iure quas provident nihil molestiae ad necessitatibus? Error, quis maxime tempora cum sapiente adipisci non animi asperiores fuga accusamus consequatur!</div>
+    <div class="others">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quam numquam nam. Modi, rerum amet. Labore odio reiciendis natus amet inventore porro culpa quaerat aperiam, mollitia delectus sint, laborum pariatur.</div>
+    <!-- 
+    relative与static比较增加了两个功能
+    1. 增加了top right bottom left的设定
+    2. 可以作为内部absolute元素的参照物 -->
+</body>
+
+</html>

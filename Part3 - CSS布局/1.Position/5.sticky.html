@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.sticky</title>
+
+    <style>
+        html {
+            font-family: Consolas;
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        .sticky {
+            position: sticky;
+            /* top：距离顶部的距离，距离符合就触发 */
+            /* IE浏览器不支持 */
+            top: 0;
+            height: 120px;
+        }
+        
+        .decoration {
+            background-color: #1abc9c;
+            color: white;
+            border: 3px solid #128971;
+            width: 50vw;
+        }
+        
+        .insert {
+            background-color: #5069DA;
+            height: 120px;
+            color: #fff;
+            border: 3px solid #3d50a6;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>sticky</h1>
+    <div class="insert">height: 120px</div>
+    <div class="sticky decoration">position: sticky</div>
+    <div class="insert">height: 120px</div>
+    <div class="insert">height: 120px</div>
+    <div class="insert">height: 120px</div>
+    <div class="insert">height: 120px</div>
+    <div class="insert">height: 120px</div>
+    <div class="insert">height: 120px</div>
+    <div class="insert">height: 120px</div>
+    <div class="insert">height: 120px</div>
+</body>
+
+</html>

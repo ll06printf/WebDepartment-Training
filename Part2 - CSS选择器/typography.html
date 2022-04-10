@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 根元素为html */
+        html {
+            font-size: 20px;
+        }
+
+        /* 补充em的倍乘用法 */
+        #source{
+            font-size: 10px;
+        }
+
+        .times{
+            font-size: 2em;
+        }
+
+        .rem-p{
+            /* 使用rem单位时，行高只根据根元素（html）的字体大小（font-size)乘倍数（1.6）得到最终的行高 */
+            line-height: 1.6rem;
+        }
+
+        .rem-p-cn{
+            line-height: 1.6rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-weight: 100;">This is font weight of 100</p>
+    <p style="font-weight: 200;">This is font weight of 200</p>
+    <p style="font-weight: 300;">This is font weight of 300</p>
+    <p style="font-weight: 400;">This is font weight of 400</p>
+    <p style="font-weight: 500;">This is font weight of 500</p>
+    <p style="font-weight: 600;">This is font weight of 600</p>
+    <p style="font-weight: 700;">This is font weight of 700</p>
+    <p style="font-weight: 800;">This is font weight of 800</p>
+    <p style="font-weight: 900;">This is font weight of 900</fp>
+        <hr>
+    <p style="font-size: 7px;">This is font size of 7px</p>
+    <p style="font-size: 2rem;">This is font size of 2rem</p>
+
+    <div class="times" id="source">
+        2em
+        <div class="times">
+            2em
+            <div class="times">
+                2em
+                <div class="times">
+                    2em
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Normal</h1>
+    <p style="font-style: normal;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sunt amet cupiditate
+        dignissimos saepe deserunt,
+        at repellendus eos aspernatur praesentium ipsam dolorum, assumenda cum numquam harum? Dolore soluta atque
+        voluptate!</p>
+
+    <h1>Italic</h1>
+    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sunt amet cupiditate
+        dignissimos saepe deserunt,
+        at repellendus eos aspernatur praesentium ipsam dolorum, assumenda cum numquam harum? Dolore soluta atque
+        voluptate!</p>
+
+    <hr>
+    <h1>Line Height</h1>
+    <p class="rem-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis excepturi
+        incidunt sed accusamus illum
+        reprehenderit nesciunt doloremque soluta quas nihil quaerat, molestias laborum, ducimus, voluptatem culpa! Quos,
+        perferendis necessitatibus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta saepe doloribus
+        officia natus dignissimos molestias recusandae laudantium suscipit vel dolor autem eos, cumque iusto aut a
+        deleniti, qui exercitationem culpa!</p>
+    <p class="rem-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis excepturi
+        incidunt sed accusamus illum
+        reprehenderit nesciunt doloremque soluta quas nihil quaerat, molestias laborum, ducimus, voluptatem culpa! Quos,
+        perferendis necessitatibus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta saepe doloribus
+        officia natus dignissimos molestias recusandae laudantium suscipit vel dolor autem eos, cumque iusto aut a
+        deleniti, qui exercitationem culpa!</p>
+    <br>
+    <p class="rem-p-cn" style="font-size: 1rem; line-height: 1.6rem;">
+        行高选择为正文的1.6~1.8倍，将会是比较舒服的，如果版面紧张，可以适当缩小的1.2~1.5倍；<br>
+        行高选择为正文的1.6~1.8倍，将会是比较舒服的，如果版面紧张，可以适当缩小的1.2~1.5倍；<br>
+        行高选择为正文的1.6~1.8倍，将会是比较舒服的，如果版面紧张，可以适当缩小的1.2~1.5倍；<br>
+        行高选择为正文的1.6~1.8倍，将会是比较舒服的，如果版面紧张，可以适当缩小的1.2~1.5倍；<br>
+        行高选择为正文的1.6~1.8倍，将会是比较舒服的，如果版面紧张，可以适当缩小的1.2~1.5倍；<br>
+        行高选择为正文的1.6~1.8倍，将会是比较舒服的，如果版面紧张，可以适当缩小的1.2~1.5倍；
+    </p>
+    <p style="font-size: 10pt;">一般来说，常规正文的字号，在9pt~12pt为宜，其中，9pt~11pt相对更适合西文，10pt~12pt相对更适合中文；(10pt)</p>
+    <p style="font-size: 12pt;">一般来说，常规正文的字号，在9pt~12pt为宜，其中，9pt~11pt相对更适合西文，10pt~12pt相对更适合中文；(12pt)</p>
+
+    <h1>Letter Spacing</h1>
+    <p style="letter-spacing: -0.05rem;">letter spacing</p>
+    <p style="letter-spacing: -0.025rem;">letter spacing</p>
+    <p style="letter-spacing: 0rem;">letter spacing (0)</p>
+    <p style="letter-spacing: 0.025rem;">letter spacing</p>
+    <p style="letter-spacing: 0.05rem;">letter spacing</p>
+    <p style="letter-spacing: 0.1rem;">letter spacing</p>
+
+    <h1>Text Align</h1>
+    <p style="text-align: left;">（左对齐）Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus quibusdam
+        in voluptas! Deleniti totam perferendis expedita a itaque reprehenderit libero aliquam, odio inventore
+        similique, perspiciatis distinctio ea quis voluptatibus?</p>
+    <p style="text-align: right;">（右对齐）Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus quibusdam
+        in voluptas! Deleniti totam perferendis expedita a itaque reprehenderit libero aliquam, odio inventore
+        similique, perspiciatis distinctio ea quis voluptatibus?</p>
+    <p style="text-align: center;">（居中）Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus quibusdam
+        in voluptas! Deleniti totam perferendis expedita a itaque reprehenderit libero aliquam, odio inventore
+        similique, perspiciatis distinctio ea quis voluptatibus?</p>
+    <p style="text-align: justify;">（左右对齐）Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus
+        quibusdam in voluptas! Deleniti totam perferendis expedita a itaque reprehenderit libero aliquam, odio inventore
+        similique, perspiciatis distinctio ea quis voluptatibus?</p>
+
+    <h1>Color</h1>
+    <p style="color: red;">R</p>
+    <p style="color: green;">G</p>
+    <p style="color: blue;">B</p>
+    <p style="color: #000000;">Black</p>
+    <p style="color: rgb(0, 0, 0);">Black</p>
+
+    <h1>Decoration</h1>
+    <p style="text-decoration: underline;">underline</p>
+    <p style="text-decoration: line-through;">line through</p>
+    <p style="text-decoration: none;">none</p>
+</body>
+
+</html>
