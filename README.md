@@ -2,6 +2,8 @@
 大连海事大学 海风学社 网络部培训资料
 Dalian Maritime University SafeWind Web Department Training Materials
 
+[教学路线](学习路线.md)（实用型 + 杂食型）
+
 ## 📖 目录
 - Part 1 HTML标签
 - Part 2 [CSS选择器](Part2%20-%20CSS选择器/)
