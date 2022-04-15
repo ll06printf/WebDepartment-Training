@@ -8,6 +8,7 @@ Dalian Maritime University SafeWind Web Department Training Materials
 - Part 1 HTML标签
 - Part 2 [CSS选择器](Part2%20-%20CSS选择器/)
 - Part 3 [CSS布局](Part3%20-%20CSS布局/)
+- Part 4 [Node.JS](Part4%20-%20Node/)
 
 ## 📃 更新日志
 Full Changelog: https://github.com/gouzimen/WebDepartment-Training/commits/main
