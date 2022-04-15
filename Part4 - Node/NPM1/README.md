@@ -37,6 +37,7 @@
 
 ### 通过NPM安装并配置Tailwind
 👉 [源文件](./resources/index.html)
+
 👉 [成品](./tailwind_test/src/index.html)
 
 安装TailwindCSS
@@ -107,6 +108,7 @@ TailwindCSS [在线运行环境](https://play.tailwindcss.com/)
 
 ### 练习1：制作一个消息卡片
 转到[源文件](./test/src/card.html)
+
 ![练习1](./Practice_1.png)
 
 ### 练习2：响应式实验
